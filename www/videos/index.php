@@ -1,7 +1,7 @@
 <?php require_once("includes/header.php"); ?>
 
 
-<div class="videoSection">
+<div class="containeer">
     <?php
 
         $subscriptionsProvider = new SubscriptionsProvider($con, $userLoggedInObj);
@@ -10,10 +10,10 @@
         $videoGrid = new VideoGrid($con, $userLoggedInObj->getUsername());
 
         if(User::isLoggedIn() && sizeof($subscriptionVideos) > 0){
-            echo $videoGrid->create($subscriptionVideos, "Subscriptions", false);
+            echo $videoGrid->create($subscriptionVideos, "Suscripciones", false);
         }
 
-        echo $videoGrid->create(null, "Recommended", false);
+        echo $videoGrid->create(null, "Recomendado", false);
 
     ?>
 </div>

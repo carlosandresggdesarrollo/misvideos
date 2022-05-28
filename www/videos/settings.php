@@ -23,7 +23,7 @@ if(isset($_POST["saveDetailsButton"])){
 
     if($account->updateDetails($firstName, $lastName, $email, $userLoggedInObj->getUsername())){
         $detailsMessage = "<div class='alert alert-success'>
-                                <strong>SUCCESS!</strong> Details Updated Successfully
+                                <strong>Exito!</strong> Detalles actualizados con éxito
                             </div>";
     }
     else {
@@ -48,7 +48,7 @@ if(isset($_POST["savePasswordButton"])){
 
     if($account->updatePassword($oldPassword, $newPassword, $newPassword2, $userLoggedInObj->getUsername())){
         $passwordMessage = "<div class='alert alert-success'>
-                                <strong>SUCCESS!</strong> Password Updated Successfully
+                                <strong>SUCCESS!</strong> PContraseña actualizada exitosamente
                             </div>";
     }
     else {

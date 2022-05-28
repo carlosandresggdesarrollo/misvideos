@@ -16,7 +16,7 @@ class ProfileGenerator{
         $profileUsername = $this->profileData->getProfileUsername();
         
         if(!$this->profileData->userExists()){
-            return "User does not exist";
+            return "La usuario no existe";
         }
 
         $coverPhotoSection = $this->createCoverPhotoSection();

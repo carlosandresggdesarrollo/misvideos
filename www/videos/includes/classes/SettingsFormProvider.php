@@ -28,7 +28,7 @@
             $saveButton = $this->createSavePasswordButton();
 
             return "<form action='settings.php' method='POST' enctype='multipart/form-data'>
-                <span class='title'>Update Password</span>
+                <span class='title'>Actualizar Contraseña</span>
                 $oldPasswordInput
                 $newPassword1Input
                 $newPassword2Input
@@ -40,30 +40,30 @@
         private function createFirstNameInput($value){
             if($value == null) $value = "";
             return "<div class='form-group'>
-                        <input class='form-control' type='text' placeholder='First Name' name='firstName' value='$value' required>
+                        <input class='form-control' type='text' placeholder='First Name' name='Nombres' value='$value' required>
                     </div>";
         }
 
         private function createLastNameInput($value){
             if($value == null) $value = "";
             return "<div class='form-group'>
-                        <input class='form-control' type='text' placeholder='Last Name' name='lastName' value='$value' required>
+                        <input class='form-control' type='text' placeholder='Last Name' name='Apellidos' value='$value' required>
                     </div>";
         }
 
         private function createEmailInput($value){
             if($value == null) $value = "";
             return "<div class='form-group'>
-                        <input class='form-control' type='email' placeholder='Email' name='email' value='$value' required>
+                        <input class='form-control' type='email' placeholder='Email' name='Correo' value='$value' required>
                     </div>";
         }
 
         private function createSaveUserDetailsButton(){
-            return "<button type='submit' class='btn btn-primary' name='saveDetailsButton'>Save</button>";
+            return "<button type='submit' class='btn btn-primary' name='saveDetailsButton'>Guardar</button>";
         }
 
         private function createSavePasswordButton(){
-            return "<button type='submit' class='btn btn-primary' name='savePasswordButton'>Save</button>";
+            return "<button type='submit' class='btn btn-primary' name='savePasswordButton'>Guardar</button>";
         }
 
         private function createPasswordInput($name, $placeholder){

@@ -77,7 +77,7 @@
             }
             else{
                 return "<a href='signIn.php'>
-                            <span class='signInLink'>SIGN IN<span>
+                            <span class='signInLink'>INICIAR SESION<span>
                         </a>";
             }
         }

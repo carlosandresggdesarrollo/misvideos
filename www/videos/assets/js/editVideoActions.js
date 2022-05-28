@@ -6,6 +6,7 @@ function setNewThumbnail(thumbnailId, videoId, itemElement) {
     $("." + itemClass).removeClass("selected");
 
     item.addClass("selected");
-    alert("Thumbnail updated");
+    alert("Miniatura actualizada
+    ");
   });
 }

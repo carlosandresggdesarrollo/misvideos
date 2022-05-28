@@ -16,7 +16,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videoss</title>
+    <title>Videos</title>
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,11 +25,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="assets/js/commonActions.js"></script>
     <script src="assets/js/userActions.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="pageContainer">
+<body class="bg-dark">
+<div id="sideNavContainer" style="display: none;" >
+            <?php
+                $navigationProvider = new NavigationMenuProvider($con, $userLoggedInObj);
+                echo $navigationProvider->create();
+            ?>
+        </div>
+    <div id="pageContainer" class="container">
 
-        <div id="mastHeadContainer">
+        <div id="mastHeadContainer" class="">
             <button class="navShowHide">
                 <img src="assets/images/icons/menu.png" alt="menu">
             </button>
@@ -37,7 +46,7 @@
             </a>
             <div class="searchBarContainer">
                 <form action="search.php" method="GET">
-                    <input type="text" class="searchBar" name="term" placeholder="Search">
+                    <input type="text" class="searchBar" name="term" placeholder="BUSCADOR">
                     <button class="searchButton">
                         <img src="assets/images/icons/search.png" alt="Search">
                     </button>
@@ -51,13 +60,8 @@
             </div>
         </div>
 
-        <div id="sideNavContainer" style="display: none;">
-            <?php
-                $navigationProvider = new NavigationMenuProvider($con, $userLoggedInObj);
-                echo $navigationProvider->create();
-            ?>
-        </div>
+       
 
-        <div id="mainSectionContainer">
+        <div id="mainSectionContainer" >
 
             <div id="mainContentContainer">

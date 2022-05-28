@@ -14,10 +14,10 @@ $videoGrid = new VideoGrid($con, $userLoggedInObj);
 
     <?php
     if(sizeof($videos) > 0){
-        echo $videoGrid->createLarge($videos, "Trending Videos uploaded last week", false);
+        echo $videoGrid->createLarge($videos, "Vídeos de tendencia subidos la semana pasada", false);
     }
     else {
-        echo "No trending Videos to show";
+        echo "No hay videos de tendencias para mostrar";
     }
     ?>
 

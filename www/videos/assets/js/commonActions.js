@@ -14,5 +14,5 @@ $(document).ready(function () {
 });
 
 function notSignedIn() {
-  alert("You must be Signed In to perform this action");
+  alert("Debe iniciar sesión para realizar esta acción");
 }

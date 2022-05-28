@@ -9,7 +9,7 @@ function subscribe(userTo, userFrom, button) {
       var buttonText = $(button).hasClass("subscribe") ? "SUBSCRIBE" : "SUBSCRIBED";
       $(button).text(buttonText + " " + count);
     } else {
-      alert("Something went Wrong PHEW");
+      alert("Algo salió mal UPH);
     }
   });
 }

@@ -34,13 +34,13 @@ if(isset($_POST["saveButton"])){
 
     if($videoData->updateDetails($con, $video->getId())){
         $detailsMessage = "<div class='alert alert-success'>
-                                <strong>SUCCESS!</strong> Details Updated Successfully
+                                <strong>Exito!</strong>  Detalles actualizados con éxito
                             </div>";
         $video = new Video($con, $_GET["videoId"], $userLoggedInObj);
     }
     else {
         $detailsMessage = "<div class='alert alert-danger'>
-                                <strong>ERROR!</strong> Something went wrong
+                                <strong>ERROR!</strong> Algo salió mal
                             </div>";
     }
 

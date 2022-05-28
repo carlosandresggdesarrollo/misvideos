@@ -32,19 +32,19 @@
             $categoriesInput = $this->createCategoriesInput(null);
             return "<form  method='post' action='processing.php' enctype='multipart/form-data' >
                         <div class='form-group'>
-                            <label for='exampleFormControlFile1'>nuevo video</label>
+                            <label for='exampleFormControlFile1'>Nuevo video</label>
                             <input type='file' class='form-control-file'  name='fileInput' required>
                         </div>
                         <div class='form-group'>
-                            <input class='form-control' type='text' placeholder='Title' name='titleInput' value=''>
+                            <input class='form-control' type='text' placeholder='Titulo' name='titleInput' value=''>
                         </div>
                         <div class='form-group'>
-                            <textarea class='form-control' placeholder='Description' name='descriptionInput' rows='3'></textarea>
+                            <textarea class='form-control' placeholder='Descripcion' name='descriptionInput' rows='3'></textarea>
                         </div>
                         <div class='form-group'>
                             <select class='form-control' name='privacyInput'>
-                                <option value='0' >Private</option>
-                                <option value='1' >Public</option>
+                                <option value='0' >Privado</option>
+                                <option value='1' >Publico</option>
                             </select>
                         </div>
                          ".$categoriesInput."

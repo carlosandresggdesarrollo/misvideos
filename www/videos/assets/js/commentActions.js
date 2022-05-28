@@ -15,7 +15,7 @@ function postComment(button, postedBy, videoId, replyTo, containerClass) {
       }
     });
   } else {
-    alert("You can't post an empty comment");
+    alert("No puedes publicar un comentario vacío");
   }
 }
 

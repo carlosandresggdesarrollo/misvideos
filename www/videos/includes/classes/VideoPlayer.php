@@ -16,9 +16,11 @@
                 $autoPlay = "";
             }
             $filePath = $this->video->getFilePath();
-            return "<video class='videoPlayer' controls $autoPlay>
+            return "
+            <br><br><br><br><br>
+            <video class='videoPlayer' controls $autoPlay>
                 <source src='$filePath' type='video/mp4'>
-                Your browser does not support the video tag.
+                Su navegador no soporta la etiqueta de vídeo.
             </video>";
         }
     }
